@@ -1,0 +1,20 @@
+<!-- http://campus.codeschool.com/courses/shaping-up-with-angular-js/level/1/section/3/video/1 -->
+<!DOCTYPE html>
+<html ng-app="store">
+<head>
+	<title>Playing with AngularJS</title>
+	<link rel="stylesheet" type="text/css" src="css/boostrap.min.css" />
+</head>
+<body>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<div class="row">
+		<div class="col-xs-12" ng-controller="StoreController as store">
+			<h1>Store Items</h1>
+			<h2>{{store.product.name}}</h2>
+			<p><strong>Price: </strong>{{store.product.price}}</p>
+			<p>{{store.product.description}}</p>
+		</div>
+	</div>
+</body>
+</html>
